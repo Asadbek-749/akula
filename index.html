@@ -1,13 +1,28 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>akula</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Akula O‘yini</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100 gap-6">
+  <div id="gameBoard" class="grid grid-cols-3 gap-4 w-80">
+    <!-- 9 ta box -->
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+    <div class="box w-24 h-24 bg-blue-200 flex items-center justify-center rounded cursor-pointer"></div>
+  </div>
+
+  <button id="restartBtn" class="px-5 py-2 bg-red-500 text-white font-bold rounded hover:bg-red-600 transition">
+    Qayta o‘yna
+  </button>
+
+  <script src="/src/main.js"></script>
+</body>
 </html>
